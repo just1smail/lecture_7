@@ -155,3 +155,18 @@ students.forEach((value, key) => {
 ```
 # Что такое new Set() ?
 ## Set в JavaScript - это встроенный объект, который позволяет хранить уникальные значения любого типа, будь то примитивные значения или объекты.
+
+```js
+let set = new Set();
+
+set.add(1);
+set.add(2);
+set.add(3);
+set.add(2); // Это значение не будет добавлено, так как оно уже есть в наборе
+
+console.log(set.has(1)); // Выводит: true
+console.log(set.has(4)); // Выводит: false
+
+console.log(set.size); // Выводит: 3
+
+```
